@@ -1,0 +1,22 @@
+{
+  "name": "task_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.9"
+  },
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "hmr": "nodemon --exec npm run babel-node -- index.js",
+    "nodemon": "npm run hmr",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
