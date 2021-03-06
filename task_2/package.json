@@ -1,0 +1,16 @@
+{
+  "name": "task_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "hmr": "nodemon index.js",
+    "nodemon": "npm run hmr",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
