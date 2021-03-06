@@ -12,6 +12,6 @@ const writeStream = fs.createWriteStream(writedFilePath);
 csvtojson()
   .fromStream(readStream)
   .subscribe(json => {
-    const formatedFile = JSON.stringify(json).replace('[', '').replace(']', '').replace(/},/g, "\n");
+    const formatedFile = JSON.stringify(json).replace('[', '').replace(']', '').replace('}', '},\n');
     writeStream.write(formatedFile);
   });
